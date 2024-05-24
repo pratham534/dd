@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static 'img/favicon.png' %}" rel="icon">
-  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  {% comment %} <link href="{% static 'img/favicon.png' %}" rel="icon"> {% endcomment %}
+  {% comment %} <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon"> {% endcomment %}
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -55,7 +55,7 @@
           <li><a href="{% url 'index' %}#services">Services</a></li>
           {% comment %} <li><a href="{% url 'index' %}#portfolio">Portfolio</a></li> {% endcomment %}
           <li><a href="{% url 'index' %}#pricing">Pricing</a></li>
-          {% comment %} <li><a href="{% url 'index' %}#team">Team</a></li> {% endcomment %}
+          <li><a href="{% url 'index' %}#">Team</a></li>
           {% comment %} <li><a href="blog.html">Blog</a></li> {% endcomment %}
           {% comment %} <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -95,7 +95,7 @@
         <div class="row">
           <div class="col-lg-10">
             <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Our Website</h2>
-            <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
+            <p data-aos="fade-up" data-aos-delay="200">We are team of counseling service providers guiding you to choose the right career path of you.</p>
           </div>
           {% comment %} <div class="col-lg-5">
             <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
@@ -150,7 +150,7 @@
 
           <div class="col-xl-5 content">
             <h3>About Us</h3>
-            <h2>Ducimus rerum libero reprehenderit cumque</h2>
+            <h2>About DegreeDream</h2>
             <p>At DegreeDream, we understand the pivotal moment that follows every student's academic journey – the transition from school to college. With a mission to simplify this complex process, we offer comprehensive counseling services to students aspiring to secure admissions into esteemed colleges and universities after various national and state-level examinations.</p>
             {% comment %} <a class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> {% endcomment %}
           </div>
@@ -508,7 +508,7 @@
               <div class="icon">
                 <i class="bi bi-box"></i>
               </div>
-              <h4><sup>$</sup>2000</h4>
+              <h4><sup>₹</sup>2000</h4>
               <ul>
                 <li><i class="bi bi-check"></i> <span>Personalized academic counseling session.</span></li>
                 <li><i class="bi bi-check"></i> <span>Exam preparation resources for one standardized test.</span></li>
@@ -517,7 +517,7 @@
                 {% comment %} <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
                 <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> {% endcomment %}
               </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+              <div class="text-center"><a href="https://forms.gle/9hg1ca2TDndH7A1X7" class="buy-btn">Buy Now</a></div>
             </div>
           </div><!-- End Pricing Item -->
 
@@ -528,7 +528,7 @@
                 <i class="bi bi-rocket"></i>
               </div>
 
-              <h4><sup>$</sup>8000</h4>
+              <h4><sup>₹</sup>8000</h4>
               <ul>
                 <li><i class="bi bi-check"></i> <span>Exam preparation resources for two standardized tests.</span></li>
                 <li><i class="bi bi-check"></i> <span>Application assistance for up to 10 college applications.</span></li>
@@ -536,7 +536,7 @@
                 <li><i class="bi bi-check"></i> <span>Access to exclusive workshops and webinars.</span></li>
                 {% comment %} <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li> {% endcomment %}
               </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+              <div class="text-center"><a href="https://forms.gle/9hg1ca2TDndH7A1X7" class="buy-btn">Buy Now</a></div>
             </div>
           </div><!-- End Pricing Item -->
 
@@ -546,7 +546,7 @@
               <div class="icon">
                 <i class="bi bi-send"></i>
               </div>
-              <h4><sup>$</sup>12000</h4>
+              <h4><sup>₹</sup>12000</h4>
               <ul>
                 <li><i class="bi bi-check"></i> <span>Comprehensive exam preparation resources for three standardized tests.</span></li>
                 <li><i class="bi bi-check"></i> <span>Priority email, phone, and video call support with dedicated counselor.</span></li>
@@ -554,7 +554,7 @@
                 <li><i class="bi bi-check"></i> <span>Ongoing support throughout the admissions process.</span></li>
                 {% comment %} <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li> {% endcomment %}
               </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+              <div class="text-center"><a href="https://forms.gle/9hg1ca2TDndH7A1X7" class="buy-btn">Buy Now</a></div>
             </div>
           </div><!-- End Pricing Item -->
 
@@ -1029,10 +1029,10 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
 
             <div class="row gy-4">
-              <div class="col-md-6">
+              <div class="col-md-3">
                 <div class="info-item" data-aos="fade" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
@@ -1041,7 +1041,7 @@
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="col-md-6">
+              <div class="col-md-3">
                 <div class="info-item" data-aos="fade" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
@@ -1050,15 +1050,16 @@
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="col-md-6">
+              <div class="col-md-3">
                 <div class="info-item" data-aos="fade" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
                   <p>degreedream.contact@gmail.com</p>
+                  <p>degreedream.info@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="col-md-6">
+              <div class="col-md-3">
                 <div class="info-item" data-aos="fade" data-aos-delay="500">
                   <i class="bi bi-clock"></i>
                   <h3>Open Hours</h3>
@@ -1071,8 +1072,8 @@
 
           </div>
 
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-12">
+            {% comment %} <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -1095,12 +1096,18 @@
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
+                  
                 </div>
-
+                
+                <div>
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScum1jir7hrsECxT0RkHPqyPL0RTIRFuecgP2lCSn4uZ0BgeQ/viewform?embedded=true" width="640" height="906" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+                
               </div>
-            </form>
+            </form> {% endcomment %}
+            <div class="php-email-form text-center">
+              <div class="btn send-message"><a href="https://forms.gle/QqjqMC5RNfAciHEm8" role="button">Send Message</a></div>
+            </div>            
           </div><!-- End Contact Form -->
 
         </div>
@@ -1152,10 +1159,12 @@
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>Jabalpur, M.P.</p>
+          <p>Dumna Road</p>
+          <p>Jabalpur, Madhya Pradesh</p>
           <p>India</p>
           <p class="mt-4"><strong>Phone:</strong> <span>+91 8764046005</span></p>
           <p><strong>Email:</strong> <span>degreedream.contact@gmail.com</span></p>
+          <p><strong>Email:</strong> <span>degreedream.info@gmail.com</span></p>
         </div>
 
       </div>
@@ -1164,7 +1173,7 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="sitename">DegreeDream</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        Made with 💛 by <a href="https://bootstrapmade.com/">DegreeDream</a>
+        Made with ❤ by <a href="{% url 'index' %}">DegreeDream</a>
       </div>
     </div>
 
