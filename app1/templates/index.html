@@ -645,12 +645,12 @@
     </section><!-- /Faq Section --> {% endcomment %}
 
     <!-- Team Section -->
-    {% comment %} <section id="team" class="team section">
+    <section id="team" class="team section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Meet Our Elite Team of Experienced Counselors, Dedicated to Providing Expert Guidance Services.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -659,7 +659,7 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
-              <img src="{% static 'img/team/team-1.jpg' %}" class="img-fluid" alt="">
+              <img src="{% static 'img/team/pranshi-gupta.jpg' %}" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -668,15 +668,15 @@
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
+              <h4>Pranshi Gupta</h4>
+              <span>Expert Counsellor</span>
+              <p>With 8+ years of experience in helping students in counseling for JEE, NEET-UG and other exams.</p>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
-              <img src="{% static 'img/team/team-2.jpg' %}" class="img-fluid" alt="">
+              <img src="{% static 'img/team/ankit-joiya.jpg' %}" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -685,15 +685,15 @@
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
-              <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut</p>
+              <h4>Ankit Joiya</h4>
+              <span>Counsellor</span>
+              <p>3+ years of guiding and assisting students in counselling of JoSAA and CSAB.</p>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-              <img src="{% static 'img/team/team-3.jpg' %}" class="img-fluid" alt="">
+              <img src="{% static 'img/team/default-user-avatar.png' %}" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -702,13 +702,13 @@
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui</p>
+              <h4>Ashu Gautam</h4>
+              <span>Counsellor</span>
+              <p>Experience in providing counselling service to students in JoSAA, JAC and CUET for 3+ years.</p>
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          {% comment %} <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
             <div class="member-img">
               <img src="{% static 'img/team/team-4.jpg' %}" class="img-fluid" alt="">
               <div class="social">
@@ -757,13 +757,13 @@
               <span>Operation</span>
               <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
             </div>
-          </div><!-- End Team Member -->
+          </div><!-- End Team Member --> {% endcomment %}
 
         </div>
 
       </div>
 
-    </section><!-- /Team Section --> {% endcomment %}
+    </section><!-- /Team Section -->
 
     {% comment %} <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section">
@@ -1152,8 +1152,8 @@
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="{% url 'index' %}#about">About us</a></li>
+            <li><a href="{% url 'index' %}#services">Services</a></li>
             <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
