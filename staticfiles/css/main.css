@@ -402,6 +402,17 @@ h6 {
   }
 }
 
+.navmenu .latest{
+  border-radius: 10px;
+  background-color: var(--contrast-color);
+  color: var(--accent-color);
+}
+
+.navmenu .latest:hover{
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -792,6 +803,40 @@ section,
     font-size: 18px;
   }
 }
+
+/*--------------------------------------------------------------
+# latest-news Section
+--------------------------------------------------------------*/
+.latest-news .news-div{
+  margin: auto;
+}
+
+.latest-news .news-div .news-info {
+  text-align: center;
+}
+.latest-news .news-info h3 {
+  color: var(--accent-color);
+}
+
+.latest-news .buy-btn {
+  color: rgba(var(--default-color-rgb), 0.8);
+  background-color: var(--background-color);
+  display: inline-block;
+  padding: 8px 40px 10px 40px;
+  border-radius: 50px;
+  border: 1px solid rgba(var(--default-color-rgb), 0.2);
+  transition: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--heading-font);
+  transition: 0.3s;
+}
+.latest-news .buy-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+
 
 /*--------------------------------------------------------------
 # Clients Section
@@ -1534,6 +1579,8 @@ section,
 .team .member .member-img img {
   position: relative;
   z-index: 1;
+  width: 100%;
+  height: auto;
 }
 
 .team .member .member-img .social {
