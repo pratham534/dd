@@ -40,7 +40,7 @@
 <body class="index-page">
   {% comment %} <p>Latest</p> {% endcomment %}
   <div class="news">
-    <div class=""></div>
+    <div class="new-focus"></div>
 
   </div>
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -54,12 +54,12 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
+          {% comment %} <li><a href="{% url 'index' %}#latest-news">Latest</a></li> {% endcomment %}
           <li><a href="{% url 'index' %}#hero" class="">Home</a></li>
           <li><a href="{% url 'index' %}#about">About</a></li>
           <li><a href="{% url 'index' %}#services">Services</a></li>
-          {% comment %} <li><a href="{% url 'index' %}#portfolio">Portfolio</a></li> {% endcomment %}
-          <li><a href="{% url 'index' %}#pricing">Pricing</a></li>
           <li><a href="{% url 'index' %}#team">Team</a></li>
+          <li><a href="{% url 'index' %}#pricing">Pricing</a></li>
           {% comment %} <li><a href="blog.html">Blog</a></li> {% endcomment %}
           {% comment %} <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -98,8 +98,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
-            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Our Website</h2>
-            <p data-aos="fade-up" data-aos-delay="200">DegreeDream is your partner in achieving academic success. Let us guide you on your journey to higher education excellence.</p>
+            <h2 data-aos="fade-up" data-aos-delay="100">Searching for top counsellors?</h2>
+            <p data-aos="fade-up" data-aos-delay="200">You are at right place. Let DegreeDream top counselling team guide and assist you on your journey to higher education excellence.</p>
           </div>
           {% comment %} <div class="col-lg-5">
             <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
@@ -488,10 +488,91 @@
           </div><!-- End Portfolio Container -->
 
         </div>
-
+        
       </div>
-
+      
     </section><!-- /Portfolio Section --> {% endcomment %}
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Meet Our Elite Team of Experienced Counselors, Dedicated to Providing Expert Guidance Services.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <img src="{% static 'img/team/pranshi-gupta.jpg' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Pranshi Gupta</h4>
+              <span>Expert Counsellor</span>
+              <p>With 8+ years of experience in helping students in counseling for JEE, NEET-UG and other exams</p>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <img src="{% static 'img/team/parvez-khan.png' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Parvez Khan</h4>
+              <span>Expert Counsellor</span>
+              <p>With 4+ years of specialization in UP-TAC(AKTU), JAC, MMMUT and HBTU Kanpur Counselling</p>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <img src="{% static 'img/team/ankit-joiya.jpg' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Ankit Joiya</h4>
+              <span>Counsellor</span>
+              <p>3+ years of guiding and assisting students in counselling of JoSAA and CSAB</p>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+              <img src="{% static 'img/team/default-user-avatar.png' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Ashu Gautam</h4>
+              <span>Counsellor</span>
+              <p>Experience in providing counselling service to students in JoSAA, JAC and CUET for 3+ years</p>
+            </div>
+          </div><!-- End Team Member -->
+        </div>
+      </div>
+    </section><!-- /Team Section -->
 
     <!-- Pricing Section -->
     <section id="pricing" class="pricing section">
@@ -648,143 +729,6 @@
 
     </section><!-- /Faq Section --> {% endcomment %}
 
-    <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Meet Our Elite Team of Experienced Counselors, Dedicated to Providing Expert Guidance Services.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="{% static 'img/team/pranshi-gupta.jpg' %}" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Pranshi Gupta</h4>
-              <span>Expert Counsellor</span>
-              <p>With 8+ years of experience in helping students in counseling for JEE, NEET-UG and other exams</p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="{% static 'img/team/parvez-khan.png' %}" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Parvez Khan</h4>
-              <span>Expert Counsellor</span>
-              <p>With 4+ years of specialization in UP-TAC(AKTU), JAC, MMMUT and HBTU Kanpur Counselling</p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <img src="{% static 'img/team/ankit-joiya.jpg' %}" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Ankit Joiya</h4>
-              <span>Counsellor</span>
-              <p>3+ years of guiding and assisting students in counselling of JoSAA and CSAB</p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <img src="{% static 'img/team/default-user-avatar.png' %}" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Ashu Gautam</h4>
-              <span>Counsellor</span>
-              <p>Experience in providing counselling service to students in JoSAA, JAC and CUET for 3+ years</p>
-            </div>
-          </div><!-- End Team Member -->
-
-          {% comment %} <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-            <div class="member-img">
-              <img src="{% static 'img/team/team-4.jpg' %}" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
-              <p>Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam quasi quam consectetur</p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
-            <div class="member-img">
-              <img src="{% static 'img/team/team-5.jpg' %}" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Brian Doe</h4>
-              <span>Marketing</span>
-              <p>Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt doloribus quia impedit laborum velit</p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-            <div class="member-img">
-              <img src="{% static 'img/team/team-6.jpg' %}" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Josepha Palas</h4>
-              <span>Operation</span>
-              <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
-            </div>
-          </div><!-- End Team Member --> {% endcomment %}
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
 
     {% comment %} <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section">
@@ -1082,7 +1026,7 @@
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
                   <p>+91 8764046005</p>
-                  <p>+91 9305719315</p>
+                  <p>+91 9305719315</p>+
                 </div>
               </div><!-- End Info Item --> {% endcomment %}
 
