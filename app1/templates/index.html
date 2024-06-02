@@ -54,8 +54,8 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          {% comment %} <li><a href="{% url 'index' %}#latest-news">Latest</a></li> {% endcomment %}
           <li><a href="{% url 'index' %}#hero" class="">Home</a></li>
+          <li><a href="{% url 'index' %}#latest-news" class="latest">Latest</a></li>
           <li><a href="{% url 'index' %}#about">About</a></li>
           <li><a href="{% url 'index' %}#services">Services</a></li>
           <li><a href="{% url 'index' %}#team">Team</a></li>
@@ -111,6 +111,59 @@
       </div>
 
     </section><!-- /Hero Section -->
+
+    <!-- Latest News Section -->
+    <section id="latest-news" class="latest-news section">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Latest News</h2>
+          <p>Stay updated with the latest news and updates from DegreeDream.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="news-div col-lg-4">
+            <div class="news-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="news-info">
+                <span>May 31, 2024</span>
+                <h3>JAC Counselling Begins!!</h3>
+                <p>Begin your journey with us, starting off with assistantship in JAC Counselling.</p>
+                <div class="text-center"><a href="https://forms.gle/9hg1ca2TDndH7A1X7" class="buy-btn">Start Now</a></div>
+              </div>
+            </div>
+          </div>
+
+          {% comment %} <div class="col-lg-4">
+            <div class="news-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="news-img">
+                <img src="{% static 'img/news/news-2.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="news-info">
+                <span>April 15, 2024</span>
+                <h3><a href="#">Career Guidance Program</a></h3>
+                <p>Join our career guidance program to explore career options, identify potential career paths, and make informed decisions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="news-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="news-img">
+                <img src="{% static 'img/news/news-3.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="news-info">
+                <span>April 01, 2024</span>
+                <h3><a href="#">Exam Preparation Resources</a></h3>
+                <p>Access specialized coaching and resources to prepare for a variety of national and state-level entrance examinations.</p>
+              </div>
+            </div>
+          </div> {% endcomment %}
+
+        </div>
+        
+      </div>
+
+    </section><!-- /Latest News Section -->
 
     {% comment %} <!-- Clients Section -->
     <section id="clients" class="clients section">
@@ -506,12 +559,12 @@
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
               <img src="{% static 'img/team/pranshi-gupta.jpg' %}" class="img-fluid" alt="">
-              <div class="social">
+              {% comment %} <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
                 <a href="#"><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
+              </div> {% endcomment %}
             </div>
             <div class="member-info text-center">
               <h4>Pranshi Gupta</h4>
@@ -523,12 +576,12 @@
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
               <img src="{% static 'img/team/parvez-khan.png' %}" class="img-fluid" alt="">
-              <div class="social">
+              {% comment %} <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
                 <a href="#"><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
+              </div> {% endcomment %}
             </div>
             <div class="member-info text-center">
               <h4>Parvez Khan</h4>
@@ -540,12 +593,12 @@
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
               <img src="{% static 'img/team/ankit-joiya.jpg' %}" class="img-fluid" alt="">
-              <div class="social">
+              {% comment %} <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
                 <a href="#"><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
+              </div> {% endcomment %}
             </div>
             <div class="member-info text-center">
               <h4>Ankit Joiya</h4>
@@ -556,13 +609,13 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-              <img src="{% static 'img/team/default-user-avatar.png' %}" class="img-fluid" alt="">
-              <div class="social">
+              <img src="{% static 'img/team/ashu-gautam.jpg' %}" class="img-fluid" alt="">
+              {% comment %} <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
                 <a href="#"><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
+              </div> {% endcomment %}
             </div>
             <div class="member-info text-center">
               <h4>Ashu Gautam</h4>
@@ -570,7 +623,9 @@
               <p>Experience in providing counselling service to students in JoSAA, JAC and CUET for 3+ years</p>
             </div>
           </div><!-- End Team Member -->
+
         </div>
+
       </div>
     </section><!-- /Team Section -->
 
